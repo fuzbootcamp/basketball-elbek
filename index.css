@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(https://c8.alamy.com/comp/2FK531K/basketball-court-arena-stadium-cartoon-empty-hall-field-to-play-basketball-team-game-2FK531K.jpg)
+    no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.box{
+    width: 350px;
+    right: 50px;
+    bottom: 20px;
+    animation-name: basketball;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    position: absolute;
+
+}
+@keyframes basketball {
+    0%{
+        right: 50px;
+        bottom: 20px;
+    }
+20%{
+    right: 300px;
+    bottom: 20px;
+    transform: scale(1.2);
+}
+40%{
+    right: 600px;
+    bottom: 50px;
+    transform: scale(1.5);
+
+}
+60%{
+    right: 600px;
+    bottom: 300px;
+    transform: scale(1.2);
+}
+80%{
+right: 1000px;
+bottom: 300px;
+transform: rotate(390deg);
+}
+100%{
+right: 1400px;
+bottom: 300px;
+
+}
+}
